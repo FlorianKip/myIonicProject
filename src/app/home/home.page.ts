@@ -6,7 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-
+  text = "Hallo, ich bin ein Text!";
   constructor() {}
+
+  onChangeText(){
+    this.text =  Math.floor(Math.random() * Math.floor(10));
+
+  }
 
 }
